@@ -36,18 +36,6 @@ const HOW_TO_WIN_LOSE_TIE = {
   },
 };
 
-const TEMP = {
-  A: "Rock",
-  B: "Paper",
-  C: "Scissors",
-};
-
-const TEMP2 = {
-  X: "Rock",
-  Y: "Paper",
-  Z: "Scissors",
-};
-
 const Puzzle1 = async () => {
   const input = await fetchInput(2);
 
