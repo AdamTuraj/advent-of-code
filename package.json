@@ -1,0 +1,11 @@
+{
+  "name": "advent-of-code",
+  "version": "0.0.1",
+  "description": "Adam Turaj's solutions to 2022 Advent of Code",
+  "author": "Adam Turaj",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "packageManager": "yarn@3.3.0"
+}
