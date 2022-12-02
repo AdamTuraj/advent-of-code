@@ -39,6 +39,8 @@ const HOW_TO_WIN_LOSE_TIE = {
 const Puzzle1 = async () => {
   const input = await fetchInput(2);
 
+  const startTime = performance.now();
+
   let score = 0;
 
   input.split("\n").forEach((pair) => {
@@ -53,13 +55,19 @@ const Puzzle1 = async () => {
     score += SHAPE_VALUE[b];
   });
 
-  console.log("Puzzle 1 answer: ", score);
+  const endTime = performance.now();
+
+  console.log(
+    `Puzzle 1 answer: ${score} in ${Math.round(endTime - startTime)}ms`
+  );
 
   return score;
 };
 
 const Puzzle2 = async () => {
   const input = await fetchInput(2);
+
+  const startTime = performance.now();
 
   let score = 0;
 
@@ -77,12 +85,14 @@ const Puzzle2 = async () => {
     score += SHAPE_VALUE[play];
   });
 
-  console.log("Puzzle 2 answer: ", score);
+  const endTime = performance.now();
+
+  console.log(
+    `Puzzle 2 answer: ${score} in ${Math.round(endTime - startTime)}ms`
+  );
 
   return score;
 };
 
-if (require.main === module) {
-  Puzzle1();
-  Puzzle2();
-}
+Puzzle1();
+Puzzle2();

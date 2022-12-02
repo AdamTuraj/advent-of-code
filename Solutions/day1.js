@@ -1,8 +1,6 @@
 const fetchInput = require("./utils/fetchInput");
 
-const getElfCalories = async () => {
-  const puzzle = await fetchInput(1);
-
+const getElfCalories = async (puzzle) => {
   const elfCalories = puzzle.split("\n\n");
 
   const totalElfCalories = elfCalories.map((elf) => {
@@ -18,14 +16,25 @@ const getElfCalories = async () => {
 };
 
 const Puzzle1 = async () => {
-  const totalElfCalories = await getElfCalories();
-  const answer = Math.max(...totalElfCalories);
+  const puzzle = await fetchInput(1);
 
-  console.log("Puzzle 1 answer:", answer);
+  const startTime = performance.now();
+
+  const totalElfCalories = await getElfCalories(puzzle);
+  const answer = Math.max(...totalElfCalories);
+  const endTime = performance.now();
+
+  console.log(
+    `Puzzle 1 answer: ${answer} in ${Math.round(endTime - startTime)}ms`
+  );
 };
 
 const Puzzle2 = async () => {
-  const totalElfCalories = await getElfCalories();
+  const puzzle = await fetchInput(1);
+
+  const startTime = performance.now();
+
+  const totalElfCalories = await getElfCalories(puzzle);
 
   totalElfCalories.sort((a, b) => b - a);
   const topThreeElfCalories = totalElfCalories.slice(0, 3);
@@ -34,7 +43,11 @@ const Puzzle2 = async () => {
     return accumulator + value;
   }, 0);
 
-  console.log("Puzzle 2 answer: ", answer);
+  const endTime = performance.now();
+
+  console.log(
+    `Puzzle 2 answer: ${answer} in ${Math.round(endTime - startTime)}ms`
+  );
 };
 
 Puzzle1();
