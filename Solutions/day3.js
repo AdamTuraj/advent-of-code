@@ -55,7 +55,7 @@ const Puzzle2 = async () => {
   const endTime = performance.now();
 
   console.log(
-    `Puzzle 2 answer: ${score} in ${Math.round(endTime - startTime)}ms`
+    `Puzzle 2 answer: ${answer} in ${Math.round(endTime - startTime)}ms`
   );
 };
 
