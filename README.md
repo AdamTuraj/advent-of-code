@@ -33,7 +33,7 @@ node dayX.js
 | 2   | Rock Paper Scissors     | ⭐⭐  |
 | 3   | Rucksack Reorganization | ⭐⭐  |
 | 4   | Camp Cleanup            | ⭐⭐  |
-| 5   |                         |       |
+| 5   | Supply Stacks           | ⭐⭐  |
 | 6   |                         |       |
 | 7   |                         |       |
 | 8   |                         |       |
