@@ -22,7 +22,7 @@ You will then find a row with a key of "session". Copy and paste that into a fil
 Once installed run the following (replacing X with the day you are looking for)
 
 ```sh
-node dayX.js
+node Solutions/dayX.js
 ```
 
 ## Progress Overview
@@ -34,7 +34,7 @@ node dayX.js
 | 3   | Rucksack Reorganization | ⭐⭐  |
 | 4   | Camp Cleanup            | ⭐⭐  |
 | 5   | Supply Stacks           | ⭐⭐  |
-| 6   |                         |       |
+| 6   | Tuning Trouble          | ⭐⭐  |
 | 7   |                         |       |
 | 8   |                         |       |
 | 9   |                         |       |
